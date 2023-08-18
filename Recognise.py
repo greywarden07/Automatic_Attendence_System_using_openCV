@@ -46,6 +46,18 @@ while True:
                     filename = xlwrite.output('attendance', 'class1', 3, id, 'yes');
                     dict[str(id)] = str(id)
 
+            elif (id == 4):
+                id = 'Alpha'
+                if ((str(id)) not in dict):
+                    filename = xlwrite.output('attendance', 'class1', 3, id, 'yes');
+                    dict[str(id)] = str(id)
+
+            elif (id == 5):
+                id = 'Gigachad'
+                if ((str(id)) not in dict):
+                    filename = xlwrite.output('attendance', 'class1', 3, id, 'yes');
+                    dict[str(id)] = str(id)
+
         else:
             id = 'Unknown, can not recognize'
             flag = flag + 1
