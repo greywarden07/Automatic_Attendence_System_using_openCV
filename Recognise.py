@@ -5,7 +5,7 @@ import time
 
 
 start = time.time()
-period = 10
+period = 12
 face_cas = cv2.CascadeClassifier(
     'haarcascade_frontalface_default.xml')
 cap = cv2.VideoCapture(0);
@@ -49,13 +49,13 @@ while True:
             elif (id == 4):
                 id = 'Alpha'
                 if ((str(id)) not in dict):
-                    filename = xlwrite.output('attendance', 'class1', 3, id, 'yes');
+                    filename = xlwrite.output('attendance', 'class1', 4, id, 'yes');
                     dict[str(id)] = str(id)
 
             elif (id == 5):
                 id = 'Gigachad'
                 if ((str(id)) not in dict):
-                    filename = xlwrite.output('attendance', 'class1', 3, id, 'yes');
+                    filename = xlwrite.output('attendance', 'class1', 5, id, 'yes');
                     dict[str(id)] = str(id)
 
         else:

@@ -8,7 +8,7 @@ def assure_path_exists(path):
         os.makedirs(dir)
 
 
-face_id = input('enter your id ')
+face_id = input('Enter your Id ')
 # Start capturing video
 vid_cam = cv2.VideoCapture(0)
 

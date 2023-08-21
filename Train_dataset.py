@@ -28,7 +28,7 @@ def getImagesAndLabels(path):
             Ids.append(Id)
     return faceSamples,Ids
 
-faces,Ids = getImagesAndLabels('dataSet')
+faces,Ids = getImagesAndLabels('dataset')
 s = recognizer.train(faces, np.array(Ids))
 print("Successfully trained")
 recognizer.write('trainer.yml')
